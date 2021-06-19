@@ -131,7 +131,7 @@ padre.addEventListener('click', (e) => {
 });
 
 function eliminarCursoID(id) {
-	alert('eliminado numero: ' + id) + ' fue Eliminado';
+	//	alert('eliminado numero: ' + id) + ' fue Eliminado';
 	var elemento = document.getElementById(id);
 	if (!elemento) {
 		alert('El elemento selecionado no existe');
@@ -148,7 +148,7 @@ function eliminarCursoID(id) {
 }
 
 function eliminarCursoTOTAL() {
-	alert('Eliminado todo');
+	//	alert('Eliminado todo');
 
 	infoCursos.forEach((infoCurso, index) => {
 		eliminarCursoID(infoCurso.id);
