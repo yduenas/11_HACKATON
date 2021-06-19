@@ -129,6 +129,7 @@ function eliminarCursoID(id) {
 	infoCursos = infoCursos.filter((curso) => curso.id != id);
 
 	console.log(infoCursos);
+	numero.textContent = infoCursos.length;
 }
 
 function eliminarCursoTOTAL() {
@@ -137,4 +138,5 @@ function eliminarCursoTOTAL() {
 	infoCursos.forEach((infoCurso, index) => {
 		eliminarCursoID(infoCurso.id);
 	});
+	numero.textContent = infoCursos.length;
 }
