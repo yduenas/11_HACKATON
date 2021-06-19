@@ -113,6 +113,8 @@ padre.addEventListener('click', (e) => {
 
 		numero.textContent = infoCursos.length;
 		//	alert(numero.textContent);
+
+		localStorage.setItem('compras', JSON.stringify(infoCursos));
 	}
 });
 
@@ -130,6 +132,7 @@ function eliminarCursoID(id) {
 
 	console.log(infoCursos);
 	numero.textContent = infoCursos.length;
+	localStorage.setItem('compras', JSON.stringify(infoCursos));
 }
 
 function eliminarCursoTOTAL() {
@@ -139,4 +142,5 @@ function eliminarCursoTOTAL() {
 		eliminarCursoID(infoCurso.id);
 	});
 	numero.textContent = infoCursos.length;
+	localStorage.setItem('compras', JSON.stringify(infoCursos));
 }
